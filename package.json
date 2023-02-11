@@ -1,0 +1,35 @@
+{
+  "name": "playwright",
+  "version": "1.0.0",
+  "description": "jest test",
+  "main": "index.js",
+  "scripts": {
+    "coverage": "jest --collectCoverage"
+  },
+  "keywords": [
+    "jest",
+    "test",
+    "jsaqa"
+  ],
+  "author": "omelnikova",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.4.1"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "**/*.{js,jsx}",
+      "!**/node_modules/**",
+      "!**/coverage/**",
+      "!**/.vscode/**"
+     ],
+     "coverageThreshold": {
+       "branches": 100,
+       "functions": 100,
+       "lines": 100
+ }
+ }
+}
